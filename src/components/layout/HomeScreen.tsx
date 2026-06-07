@@ -252,7 +252,7 @@ export default function HomeScreen({ onSelectGame }: HomeScreenProps) {
   function handleGamePress(id: string) {
     onSelectGame?.(id);
     if (id === 'blackjack') navigation.navigate('Blackjack');
-    // Roulette and Three Card Poker screens to be added
+    if (id === 'roulette') navigation.navigate('Roulette');
   }
 
   return (

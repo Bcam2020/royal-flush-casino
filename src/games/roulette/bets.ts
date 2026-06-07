@@ -1,6 +1,6 @@
 import { nanoid } from 'nanoid/non-secure';
 import type { BetType, PlacedBet } from './types';
-import { BET_PAYOUT } from './types';
+import { BET_PAYOUT, RED_NUMBERS, BLACK_NUMBERS } from './types';
 
 // ---------------------------------------------------------------------------
 // Number-grid helpers
@@ -116,8 +116,6 @@ export function makeColumnBet(col: 1 | 2 | 3, amount: number): PlacedBet {
 }
 
 /** Even-money bets */
-import { RED_NUMBERS, BLACK_NUMBERS } from './types';
-
 export function makeEvenMoneyBet(
   type: 'red' | 'black' | 'odd' | 'even' | 'low' | 'high',
   amount: number,

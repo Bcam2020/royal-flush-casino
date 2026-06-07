@@ -60,7 +60,7 @@ export function makeHistoryEntry(result: SpinResult, balanceAfter: number): Hist
 
 /** Returns the index in WHEEL_ORDER for a given number (0–36). */
 export function wheelIndexOf(number: number): number {
-  return WHEEL_ORDER.indexOf(number);
+  return (WHEEL_ORDER as readonly number[]).indexOf(number);
 }
 
 /**
