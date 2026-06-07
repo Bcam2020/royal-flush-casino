@@ -3,7 +3,28 @@
     "allow": [
       "Bash(sudo chown -R 501:20 \"/Users/bcam/.npm\")",
       "Bash(npm install *)",
-      "Bash(npx tsc *)"
+      "Bash(npx tsc *)",
+      "Bash(npx expo *)",
+      "Skill(run)",
+      "Bash($CHROME *)",
+      "Bash(pkill -f \"expo start\")",
+      "Bash(node -e \"require\\('react-native-reanimated'\\); console.log\\('reanimated ok'\\)\")",
+      "Bash(echo \"PID=$!\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8081/)",
+      "Bash('/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' --headless=new --disable-gpu --screenshot=/tmp/rfc-home-nav.png --window-size=390,844 --hide-scrollbars --virtual-time-budget=6000 http://localhost:8081)",
+      "Bash(node -e \"console.log\\(require\\('./node_modules/react-native-reanimated/package.json'\\).version\\)\")",
+      "Bash(node -e \"console.log\\(require\\('./node_modules/metro/package.json'\\).version\\)\")",
+      "Bash(python3 -c \"import sys,json; p=json.load\\(sys.stdin\\); print\\(p.get\\('main','?'\\), p.get\\('exports',{}\\).get\\('.','?'\\)\\)\")",
+      "Bash(node -e \"require\\('react-native-worklets/plugin'\\); console.log\\('ok'\\)\")",
+      "Bash(node -e \"console.log\\(require\\('./node_modules/react-native-worklets/package.json'\\).version\\)\")",
+      "Bash('/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' --headless=new --disable-gpu --screenshot=/tmp/rfc-bj-home.png --window-size=390,844 --hide-scrollbars --virtual-time-budget=10000 http://localhost:8081)",
+      "Bash(curl -s \"http://localhost:8081/index.bundle?platform=web&dev=true\" -o /tmp/bundle-check.js)",
+      "Bash(node *)",
+      "Bash(curl -s \"http://localhost:8081/index.bundle?platform=web&dev=true\" -o /tmp/btest.js)",
+      "Bash(python3 -c \"import sys; d=open\\('/tmp/btest.js'\\).read\\(200\\); sys.exit\\(0 if len\\(d\\)>100 and 'InternalError' not in d else 1\\)\")",
+      "Bash('/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' --headless=new --disable-gpu --screenshot=/tmp/rfc-lobby.png --window-size=390,844 --hide-scrollbars --virtual-time-budget=8000 http://localhost:8081)",
+      "Bash('/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' --headless=new --disable-gpu --screenshot=/tmp/rfc-bj-screen.png --window-size=390,844 --hide-scrollbars --virtual-time-budget=12000 --run-all-compositor-stages-before-draw http://localhost:8081)",
+      "Bash('/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' --headless=new --disable-gpu --screenshot=/tmp/rfc-bj-betting.png --window-size=390,844 --hide-scrollbars --virtual-time-budget=12000 http://localhost:8081)"
     ]
   }
 }
